@@ -1,0 +1,78 @@
+# depslib dependency file v1.0
+1701182350 source:f:\edgar if\dev\teatro_arvore\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701135197 source:f:\edgar if\dev\teatro_arvore\criar.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701182343 f:\edgar if\dev\teatro_arvore\arvore.h
+
+1701135220 source:f:\edgar if\dev\teatro_arvore\inserir.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701140949 source:f:\edgar if\dev\teatro_arvore\percoreemordem.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701141454 source:f:\edgar if\dev\teatro_arvore\ordenararvore.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701179970 source:f:\edgar if\dev\teatro_arvore\balanceararvore.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701142165 source:f:\edgar if\dev\teatro_arvore\contar.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701142366 source:f:\edgar if\dev\teatro_arvore\menuinserir.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701142522 source:f:\edgar if\dev\teatro_arvore\menuordenar.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701177443 source:f:\edgar if\dev\teatro_arvore\encontrarminimo.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701178996 source:f:\edgar if\dev\teatro_arvore\liberararvore.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701179683 source:f:\edgar if\dev\teatro_arvore\remover.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701182823 source:f:\edgar if\dev\teatro_arvore\atualizarpoltrona.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701181262 source:f:\edgar if\dev\teatro_arvore\encontrar.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701181061 source:f:\edgar if\dev\teatro_arvore\menuremover.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
