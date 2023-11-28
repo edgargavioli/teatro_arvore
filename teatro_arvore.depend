@@ -76,3 +76,86 @@
 	<stdlib.h>
 	"arvore.h"
 
+1701201677 source:c:\dev\teatro_arvore\balanceararvore.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701200672 c:\dev\teatro_arvore\arvore.h
+	"listaEncadeada.h"
+
+1701188144 source:c:\dev\teatro_arvore\contar.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701188144 source:c:\dev\teatro_arvore\criar.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701188144 source:c:\dev\teatro_arvore\inserir.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701188144 source:c:\dev\teatro_arvore\menuinserir.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701202936 source:c:\dev\teatro_arvore\menuordenar.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701202941 source:c:\dev\teatro_arvore\ordenararvore.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701203033 source:c:\dev\teatro_arvore\percoreemordem.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+	"listaEncadeada.h"
+
+1701198210 source:c:\dev\teatro_arvore\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701188144 source:c:\dev\teatro_arvore\atualizarpoltrona.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701188144 source:c:\dev\teatro_arvore\menuremover.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701188144 source:c:\dev\teatro_arvore\liberararvore.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701188144 source:c:\dev\teatro_arvore\remover.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701188144 source:c:\dev\teatro_arvore\encontrarminimo.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701196458 c:\dev\teatro_arvore\listaencadeada.h
+	"arvore.h"
+
+1701202784 source:c:\dev\teatro_arvore\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+	"listaEncadeada.h"
+

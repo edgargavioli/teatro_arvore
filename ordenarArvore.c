@@ -2,19 +2,22 @@
 #include <stdlib.h>
 #include "arvore.h"
 
-Poltronas* ordenarArvore(Poltronas* raiz, Poltronas* arrayPoltronas[], int tamanho){
-    int index = 0;
-    percorreEmOrdem(raiz, arrayPoltronas, &index);
+Poltronas* ordenarArvore(Poltronas* raiz){
+    Nodo* lista = NULL;
+    percorreEmOrdem(raiz, &lista);
 
-    for(int i = 0; i < tamanho - 1; i++) {
-        for(int j = 0; j < tamanho - i - 1; j++){
-            if(arrayPoltronas[j]->poltrona > arrayPoltronas[j + 1]->poltrona){
-                Poltronas* temp = arrayPoltronas[j];
-                arrayPoltronas[j] = arrayPoltronas[j];
-                arrayPoltronas[j + 1] = temp;
-            }
-        }
+    int tamanhoLista = 0;
+    Nodo* temp = lista;
+
+    while(temp != NULL){
+        temp = temp->prox;
+        tamanhoLista++;
     }
 
-    return balancearArvore(arrayPoltronas, 0, tamanho - 1);
+    if(lista != NULL){
+        raiz = balancearArvore(&lista, 0, tamanhoLista - 1);
+        liberarLista(lista);
+        return raiz;
+    }
+
 }

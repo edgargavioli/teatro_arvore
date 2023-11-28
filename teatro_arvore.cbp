@@ -32,6 +32,9 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="arvore.h" />
+		<Unit filename="atualizarPoltrona.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="balancearArvore.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -41,9 +44,19 @@
 		<Unit filename="criar.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="encontrarMinimo.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="inserir.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="liberarArvore.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lista.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="listaEncadeada.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -53,10 +66,16 @@
 		<Unit filename="menuOrdenar.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="menuRemover.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="ordenarArvore.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="percoreEmOrdem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="remover.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions />

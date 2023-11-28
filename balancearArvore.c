@@ -2,16 +2,25 @@
 #include <stdlib.h>
 #include "arvore.h"
 
-Poltronas* balancearArvore(Poltronas* arrayPoltronas[], int inicio, int fim){
+Poltronas* balancearArvore(Nodo** lista, int inicio, int fim){
     if(inicio>fim){
         return NULL;
     }
 
     int meio = (inicio + fim) / 2;
 
-    Poltronas* raiz = criar(arrayPoltronas[meio], arrayPoltronas[meio]->disponivel);
-    raiz->esquerda = balancearArvore(arrayPoltronas, inicio, meio - 1);
-    raiz->direita = balancearArvore(arrayPoltronas, meio + 1, fim);
+    Poltronas* esquerda = balancearArvore(lista, inicio, meio - 1);
 
-    return raiz;
+    Poltronas* poltronas;
+
+    poltronas = criar((*lista)->poltrona, (*lista)->disponivel);
+
+    *lista = (*lista)->prox;
+
+    Poltronas* direita = balancearArvore(lista, meio + 1, fim);
+
+    poltronas->esquerda = esquerda;
+    poltronas->direita = direita;
+
+    return poltronas;
 }

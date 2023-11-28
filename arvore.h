@@ -1,5 +1,6 @@
 #ifndef ARVORE_H_INCLUDED
 #define ARVORE_H_INCLUDED
+#include "listaEncadeada.h"
 
 typedef struct {
     int poltrona;
@@ -8,20 +9,15 @@ typedef struct {
     struct Poltrona *esquerda;
 }Poltronas;
 
-typedef struct {
-    Poltronas* poltrona;
-    struct arrayOrganizar* prox;
-}arrayOrganizar;
-
 Poltronas* criar(int numPoltrona, int diponibilidade);
 
 Poltronas* inserir(Poltronas* raiz, int poltrona, int disponivel);
 
-void percorreEmOrdem(Poltronas* raiz, Poltronas* arrayPoltronas[], int* index);
+void percorreEmOrdem(Poltronas* raiz, Nodo** lista);
 
-Poltronas* ordenarArvore(Poltronas* raiz, Poltronas* arrayPoltronas[], int tamanho);
+Poltronas* ordenarArvore(Poltronas* raiz);
 
-Poltronas* balancearArvore(Poltronas* arrayPoltronas[], int inicio, int fim);
+Poltronas* balancearArvore(Nodo** lista, int inicio, int fim);
 
 int contar(Poltronas* raiz);
 
@@ -35,7 +31,7 @@ Poltronas* atualizarPoltrona(Poltronas* raiz, int valorBusca, int novaDisponibil
 
 void liberarArvore(Poltronas* raiz);
 
-void menuOrdenar(Poltronas* raiz);
+void menuOrdenar(Poltronas** raiz);
 
 void menuInserir(Poltronas** raiz);
 

@@ -22,6 +22,32 @@ void menuAtualizar(Poltronas** raiz) {
     *raiz = atualizarPoltrona(*raiz, valorBusca, novoValor);
 }
 
+void exibirInOrder(Poltronas* raiz) {
+    if (raiz != NULL) {
+        exibirInOrder(raiz->esquerda);
+        printf("%d %d\n", raiz->poltrona, raiz->disponivel);
+        exibirInOrder(raiz->direita);
+    }
+}
+
+// Função para exibir os elementos da árvore em pré-ordem (preorder)
+void exibirPreOrder(Poltronas* raiz) {
+    if (raiz != NULL) {
+        printf("%d %d\n", raiz->poltrona, raiz->disponivel);
+        exibirPreOrder(raiz->esquerda);
+        exibirPreOrder(raiz->direita);
+    }
+}
+
+// Função para exibir os elementos da árvore em pós-ordem (postorder)
+void exibirPostOrder(Poltronas* raiz) {
+    if (raiz != NULL) {
+        exibirPostOrder(raiz->esquerda);
+        exibirPostOrder(raiz->direita);
+        printf("%d %d\n", raiz->poltrona, raiz->disponivel);
+    }
+}
+
 int main()
 {
     Poltronas* raiz = NULL;
@@ -34,6 +60,7 @@ int main()
         printf("3. Excluir elemento\n");
         printf("4. Limpar arvore\n");
         printf("5. Atualizar Poltrona\n");
+        printf("6. Mostrar arvore\n");
         printf("0. Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
@@ -43,7 +70,7 @@ int main()
                 menuInserir(&raiz);
                 break;
             case 2:
-                menuOrdenar(raiz);
+                menuOrdenar(&raiz);
                 break;
             case 3:
                 menuRemover(&raiz);
@@ -54,6 +81,15 @@ int main()
                 break;
             case 5:
                 menuAtualizar(&raiz);
+                break;
+            case 6:
+                printf("%d %d\n", raiz->poltrona, raiz->disponivel);
+                printf("Em ordem:\n");
+                exibirInOrder(raiz);
+                printf("Em pos ordem:\n");
+                exibirPostOrder(raiz);
+                printf("Em pre ordem:\n");
+                exibirPreOrder(raiz);
                 break;
             case 0:
                 printf("Saindo do programa.\n");
