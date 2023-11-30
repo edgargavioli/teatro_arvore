@@ -37,5 +37,13 @@ void menuInserir(Poltronas** raiz);
 
 void menuRemover(Poltronas** raiz);
 
+void menuAtualizar(Poltronas** raiz);
+
+void exibirInOrder(Poltronas* raiz);
+
+void exibirPreOrder(Poltronas* raiz);
+
+void exibirPostOrder(Poltronas* raiz);
+
 
 #endif // ARVORE_H_INCLUDED

@@ -1,53 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "arvore.h"
-
-
-void menuAtualizar(Poltronas** raiz) {
-    int valorBusca, novoValor, verdadeiro;
-    printf("Digite a poltrona que deseja atualizar os seus status: ");
-    scanf("%d", &valorBusca);
-    do{
-        printf("Digite o novo status 1. Ocupada, 0. Disponivel: ");
-        scanf("%d", &novoValor);
-        if(novoValor == 1){
-            verdadeiro = 1;
-        }
-
-        if(novoValor == 0){
-            verdadeiro = 1;
-        }
-    }while(verdadeiro != 1);
-
-    *raiz = atualizarPoltrona(*raiz, valorBusca, novoValor);
-}
-
-void exibirInOrder(Poltronas* raiz) {
-    if (raiz != NULL) {
-        exibirInOrder(raiz->esquerda);
-        printf("%d %d\n", raiz->poltrona, raiz->disponivel);
-        exibirInOrder(raiz->direita);
-    }
-}
-
-// Função para exibir os elementos da árvore em pré-ordem (preorder)
-void exibirPreOrder(Poltronas* raiz) {
-    if (raiz != NULL) {
-        printf("%d %d\n", raiz->poltrona, raiz->disponivel);
-        exibirPreOrder(raiz->esquerda);
-        exibirPreOrder(raiz->direita);
-    }
-}
-
-// Função para exibir os elementos da árvore em pós-ordem (postorder)
-void exibirPostOrder(Poltronas* raiz) {
-    if (raiz != NULL) {
-        exibirPostOrder(raiz->esquerda);
-        exibirPostOrder(raiz->direita);
-        printf("%d %d\n", raiz->poltrona, raiz->disponivel);
-    }
-}
-
 int main()
 {
     Poltronas* raiz = NULL;
@@ -56,11 +9,12 @@ int main()
     do{
         printf("\nMenu:\n");
         printf("1. Inserir Poltrona\n");
-        printf("2. Ordenar e Exibir Arvore\n");
-        printf("3. Excluir elemento\n");
-        printf("4. Limpar arvore\n");
-        printf("5. Atualizar Poltrona\n");
-        printf("6. Mostrar arvore\n");
+        printf("2. Listar Poltronas\n");
+        printf("3. Ordenar Poltronas\n");
+        printf("4. Excluir elemento\n");
+        printf("5. Limpar arvore\n");
+        printf("6. Atualizar Poltrona\n");
+        printf("7. Mostrar Arvore\n");
         printf("0. Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
@@ -68,27 +22,44 @@ int main()
         switch (opcao) {
             case 1:
                 menuInserir(&raiz);
+                system("cls");
+                printf("Poltrona inserida com sucesso");
                 break;
             case 2:
-                menuOrdenar(&raiz);
+                system("cls");
+                printf("N Poltrona || Disponibilidade\n");
+                exibirInOrder(raiz);
                 break;
             case 3:
-                menuRemover(&raiz);
+                menuOrdenar(&raiz);
+                system("cls");
+                printf("Poltronas ordenadas com sucesso");
                 break;
             case 4:
-                liberarArvore(raiz);
-                raiz = NULL;
+                menuRemover(&raiz);
+                system("cls");
+                printf("Poltrona removida com sucesso");
                 break;
             case 5:
-                menuAtualizar(&raiz);
+                liberarArvore(raiz);
+                raiz = NULL;
+                system("cls");
+                printf("Arvore liberada com sucesso");
                 break;
             case 6:
+                menuAtualizar(&raiz);
+                system("cls");
+                printf("Status atualizado com sucesso");
+                break;
+            case 7:
+                system("cls");
+                printf("Raiz da arvore: ");
                 printf("%d %d\n", raiz->poltrona, raiz->disponivel);
-                printf("Em ordem:\n");
+                printf("Em ordem:\n\n");
                 exibirInOrder(raiz);
-                printf("Em pos ordem:\n");
+                printf("Em pos ordem:\n\n");
                 exibirPostOrder(raiz);
-                printf("Em pre ordem:\n");
+                printf("Em pre ordem:\n\n");
                 exibirPreOrder(raiz);
                 break;
             case 0:
@@ -96,7 +67,7 @@ int main()
                 liberarArvore(raiz);
                 break;
             default:
-                printf("Opcao invalida. Tente novamente.\n");
+                printf("Opcao invalida. Tente novamente.\n\n");
         }
 
     }while(opcao != 0);

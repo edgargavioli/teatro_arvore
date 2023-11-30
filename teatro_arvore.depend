@@ -81,7 +81,7 @@
 	<stdlib.h>
 	"arvore.h"
 
-1701200672 c:\dev\teatro_arvore\arvore.h
+1701374081 c:\dev\teatro_arvore\arvore.h
 	"listaEncadeada.h"
 
 1701188144 source:c:\dev\teatro_arvore\contar.c
@@ -99,7 +99,7 @@
 	<stdlib.h>
 	"arvore.h"
 
-1701188144 source:c:\dev\teatro_arvore\menuinserir.c
+1701374088 source:c:\dev\teatro_arvore\menuinserir.c
 	<stdio.h>
 	<stdlib.h>
 	"arvore.h"
@@ -120,7 +120,7 @@
 	"arvore.h"
 	"listaEncadeada.h"
 
-1701198210 source:c:\dev\teatro_arvore\main.c
+1701374347 source:c:\dev\teatro_arvore\main.c
 	<stdio.h>
 	<stdlib.h>
 	"arvore.h"
@@ -158,4 +158,14 @@
 	<stdlib.h>
 	"arvore.h"
 	"listaEncadeada.h"
+
+1701374059 source:c:\dev\teatro_arvore\exibir.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1701374059 source:c:\dev\teatro_arvore\menuatualizar.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
 
