@@ -47,6 +47,9 @@
 		<Unit filename="encontrarMinimo.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="exibir.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="inserir.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -58,6 +61,9 @@
 		</Unit>
 		<Unit filename="listaEncadeada.h" />
 		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="menuAtualizar.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="menuInserir.c">
