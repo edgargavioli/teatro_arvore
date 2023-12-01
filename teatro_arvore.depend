@@ -120,7 +120,7 @@
 	"arvore.h"
 	"listaEncadeada.h"
 
-1701374347 source:c:\dev\teatro_arvore\main.c
+1701455604 source:c:\dev\teatro_arvore\main.c
 	<stdio.h>
 	<stdlib.h>
 	"arvore.h"
@@ -159,7 +159,7 @@
 	"arvore.h"
 	"listaEncadeada.h"
 
-1701374059 source:c:\dev\teatro_arvore\exibir.c
+1701455859 source:c:\dev\teatro_arvore\exibir.c
 	<stdio.h>
 	<stdlib.h>
 	"arvore.h"

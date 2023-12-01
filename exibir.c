@@ -14,6 +14,16 @@ void exibirInOrder(Poltronas* raiz) {
     }
 }
 
+void exibirInOrderDisponiveis(Poltronas* raiz) {
+    if (raiz != NULL) {
+        exibirInOrderDisponiveis(raiz->esquerda);
+        if(raiz->disponivel == 0){
+            printf("         %d || Livre\n", raiz->poltrona);
+        }
+        exibirInOrderDisponiveis(raiz->direita);
+    }
+}
+
 void exibirPreOrder(Poltronas* raiz) {
     if (raiz != NULL) {
         if(raiz->disponivel == 0){
